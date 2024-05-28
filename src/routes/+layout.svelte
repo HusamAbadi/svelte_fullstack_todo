@@ -1,3 +1,4 @@
+<!-- Svelte script manages user authentication and data retrieval from Firestore. -->
 <script>
     import { onMount } from "svelte";
     import { auth, db } from "../lib/firebase/firebase";

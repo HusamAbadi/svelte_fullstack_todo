@@ -46,7 +46,7 @@
       <p class="error">The information you have entered is not correct</p>
     {/if}
     <label>
-      <p class={email ? ' above' : ' center'}>Email</p>
+      <p class={email ? 'above' : 'center'}>Email</p>
       <input bind:value={email} type="email" placeholder="Email" />
     </label>
     <label>
@@ -77,11 +77,13 @@
     {#if register}
       <div>
         <p>Already have an account?</p>
+        <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
         <p on:click={handleRegister} on:keydown={() => {}}>Login</p>
       </div>
     {:else}
       <div>
         <p>Don't have an account?</p>
+        <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
         <p on:click={handleRegister} on:keydown={() => {}}>Register</p>
       </div>
     {/if}

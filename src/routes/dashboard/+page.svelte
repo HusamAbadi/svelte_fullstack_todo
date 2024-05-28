@@ -1,7 +1,7 @@
 <script>
   import { db } from '../../lib/firebase/firebase';
   import { authHandlers, authStore } from '../../store/store';
-  import { getDoc, doc, setDoc } from 'firebase/firestore';
+  import { doc, setDoc } from 'firebase/firestore';
   import TodoItem from '../../components/TodoItem.svelte';
   import { onMount } from 'svelte';
 
